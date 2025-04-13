@@ -2,6 +2,9 @@
   "name": "calendar-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+  "node": ">=16"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
     "@testing-library/jest-dom": "^5.17.0",
