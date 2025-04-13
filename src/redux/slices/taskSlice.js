@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_URL = 'https://calender-backend-weom.onrender.com/api/tasks';
+const API_URL = 'https://calender-1q8f.onrender.com/api/tasks';
 
 // Fetch all tasks
 export const fetchTasks = createAsyncThunk(
