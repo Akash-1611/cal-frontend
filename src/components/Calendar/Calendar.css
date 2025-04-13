@@ -1,0 +1,117 @@
+/* src/components/Calendar/Calendar.css */
+
+.calendar-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .calendar-main {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .calendar-header h1 {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .view-selector {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .view-selector button {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.2s;
+  }
+  
+  .view-selector button:not(:last-child) {
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .view-selector button.active {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .view-selector button:hover:not(.active) {
+    background-color: #f5f5f5;
+  }
+  
+  /* Integration with TaskGoalPanel */
+  .calendar-with-panel {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .calendar-with-panel .rbc-calendar {
+    flex: 1;
+    overflow: auto;
+  }
+  
+  /* Calendar customization */
+  .rbc-event {
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.85em;
+  }
+  
+  .rbc-day-slot .rbc-event {
+    border: none;
+  }
+  
+  .rbc-header {
+    font-weight: 600;
+    padding: 10px 3px;
+  }
+  
+  .rbc-time-header-content {
+    border-left: 1px solid #e0e0e0;
+  }
+  
+  .rbc-time-view {
+    border: 1px solid #e0e0e0;
+  }
+  
+  .rbc-time-content {
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .rbc-today {
+    background-color: #e3f2fd;
+  }
+  
+  .rbc-toolbar button {
+    color: #555;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  .rbc-toolbar button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .rbc-toolbar button.rbc-active {
+    background-color: #2196f3;
+    color: white;
+    border-color: #2196f3;
+  }
